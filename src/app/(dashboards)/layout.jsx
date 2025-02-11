@@ -1,11 +1,10 @@
-
-export default function DashboardLayout({ children }) {
+ export default function DashboardLayout({ children }) {
   return (
     <div>
       <div className="grid grid-cols-12">
         {/* Side Nav */}
         <div className="col-span-3">
-          <ul>
+          <ul> 
             <li>User List</li>
           </ul>
         </div>
