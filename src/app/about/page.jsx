@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function AboutPage() {
   const router = useRouter();
-  const isLoggedIn = false;
+  const isLoggedIn = true; 
   const handleNavigation = () => {
     if (isLoggedIn) {
       router.push("/about/address");

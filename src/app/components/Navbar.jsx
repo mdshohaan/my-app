@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Fragment } from "react";
 
 export default function NavBar() {
   const pathname = usePathname();
   console.log(pathname, pathname.includes("dashboard"));
   if (!pathname.includes("dashboard")) {
     return (
-      <div>
+      <Fragment>
         <nav className="flex justify-center">
           <ul className="flex justify-between w-1/2">
             <Link href="/">
@@ -21,7 +22,7 @@ export default function NavBar() {
             </Link>
           </ul>
         </nav>
-      </div>
+      </Fragment>
     );
   } else {
     return <></>;
